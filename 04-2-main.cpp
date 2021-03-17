@@ -1,4 +1,4 @@
-#include <GL/glut.h> ///¨Ï¥ÎGLUT¥~±¾
+#include <GL/glut.h> ///ä½¿ç”¨GLUTå¤–æ›
 int N=0,vx[3000],vy[3000];
 void display()
 {
@@ -11,7 +11,7 @@ void display()
     glutSwapBuffers();
 }
 void motion(int x , int y)
-{ ///TODO: ¥ª¡B¤¤¡B¥kÁä  «ö¤U¡B¤W  x®y¼Ğ  y®y¼Ğ
+{ ///TODO: å·¦ã€ä¸­ã€å³éµ  æŒ‰ä¸‹ã€ä¸Š  xåº§æ¨™  yåº§æ¨™
     vx[N]=x; vy[N]=y;
     N++;
     display();
@@ -20,7 +20,7 @@ int main(int argc, char*argv[])
 {
     glutInit( &argc, argv );
     glutInitDisplayMode( GLUT_DOUBLE | GLUT_DEPTH );
-    ///¤Ö¼g¤@­Ó¡A¦]¬°¹w³]´N¬ORGB
+    ///å°‘å¯«ä¸€å€‹ï¼Œå› ç‚ºé è¨­å°±æ˜¯RGB
     glutCreateWindow("08373056 !!!");
 
     glutDisplayFunc(display);
