@@ -1,6 +1,6 @@
-#include <GL/glut.h> ///¨Ï¥ÎGLUT¥~±¾
-#include <math.h> ///¨Ï¥Î¼Æ¾Ç¥~±¾ cos() sin()
-#include <stdio.h> ///TODO: ¦]¬°­n printf()
+#include <GL/glut.h> ///ä½¿ç”¨GLUTå¤–æ›
+#include <math.h> ///ä½¿ç”¨æ•¸å­¸å¤–æ› cos() sin()
+#include <stdio.h> ///TODO: å› ç‚ºè¦ printf()
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -10,9 +10,9 @@ void display()
 
 }
 void mouse(int button ,int state , int x , int y)
-{ ///TODO: ¥ª¡B¤¤¡B¥kÁä  «ö¤U¡B¤W  x®y¼Ğ  y®y¼Ğ
+{ ///TODO: å·¦ã€ä¸­ã€å³éµ  æŒ‰ä¸‹ã€ä¸Š  xåº§æ¨™  yåº§æ¨™
     printf("button:%d state:%d x:%d y:%d\n", button, state, x, y);
-} ///TODO: ¦L¥X³o¨Ç­È¡AÆ[¹î¤@¤U
+} ///TODO: å°å‡ºé€™äº›å€¼ï¼Œè§€å¯Ÿä¸€ä¸‹
 
 
 
@@ -20,12 +20,12 @@ int main(int argc, char*argv[])
 {
     glutInit( &argc, argv );
     glutInitDisplayMode( GLUT_DOUBLE | GLUT_DEPTH );
-    ///¤Ö¼g¤@­Ó¡A¦]¬°¹w³]´N¬ORGB
+    ///å°‘å¯«ä¸€å€‹ï¼Œå› ç‚ºé è¨­å°±æ˜¯RGB
     glutCreateWindow("07361092 work02!!!");
 
     glutDisplayFunc(display);
 
-    glutMouseFunc(mouse);///TODO: §Ú­Ìµù¥Uªº mousec¨ç¦¡
+    glutMouseFunc(mouse);///TODO: æˆ‘å€‘è¨»å†Šçš„ mousecå‡½å¼
 
     glutMainLoop();
 }
