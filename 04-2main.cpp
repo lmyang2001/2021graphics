@@ -1,4 +1,4 @@
-#include <GL/glut.h> ///使用GLUT外掛
+#include <GL/glut.h> ///使用GLUT外掛///畫圖的
 int N=0,vx[3000],vy[3000];
 void display()
 {
