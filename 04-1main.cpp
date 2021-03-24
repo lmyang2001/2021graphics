@@ -1,4 +1,4 @@
-#include <GL/glut.h> ///使用GLUT外掛
+#include <GL/glut.h> ///使用GLUT外掛///茶壺
 #include <math.h> ///使用數學外掛 cos() sin()
 #include <stdio.h> ///TODO: 因為要 printf()
 void display()
@@ -21,7 +21,7 @@ int main(int argc, char*argv[])
     glutInit( &argc, argv );
     glutInitDisplayMode( GLUT_DOUBLE | GLUT_DEPTH );
     ///少寫一個，因為預設就是RGB
-    glutCreateWindow("07361092 work02!!!");
+    glutCreateWindow("08373056!!!");
 
     glutDisplayFunc(display);
 
