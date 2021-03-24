@@ -1,4 +1,4 @@
-#include <GL/glut.h> ///使用GLUT外掛///茶壺
+#include <GL/glut.h> ///使用GLUT外掛///畫圖的
 #include <math.h> ///使用數學外掛 cos() sin()
 #include <stdio.h> ///TODO: 因為要 printf()
 void display()
